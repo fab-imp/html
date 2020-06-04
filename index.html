@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="fr">
+
+<!-- Balise head , en-tete du document , pas d'affichage juste des infos-->
+<!-- ces textes en vert sont des commentaires, n'interferent pas avec le code -->
+
+<head>
+    <!-- Required meta tags -->
+    <!-- infos diverses sur l'affichage de la page -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <!-- liens vers les differents fichier css pour la mise en page -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Cours Bootstrap</title>
+</head>
+
+<!-- balise body , corps de la page , affichage de la page -->
+
+<body>
+<h1 class="py-1">C'est pas faux</h1>
+
+<!--<div class="container">-->
+    <!--<div class="row">-->
+        <!--<div class="col-sm-12 col-md-6 col-lg-3 mb-4 py-1 border border-dark rounded">-->
+            <!--Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aperiam deserunt dicta dolor fugiat labore, natus officia optio perspiciatis quas quisquam, repellat similique voluptates. Dolore dolores impedit reiciendis repellendus rerum.-->
+        <!--</div>-->
+        <!--<div class="col-sm-12 col-md-6 col-lg-3 mb-4 py-1 border border-dark rounded">-->
+            <!--Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aut, blanditiis ducimus expedita hic iste omnis quam quo reiciendis soluta? Cum cupiditate distinctio esse facilis nisi numquam odit repellat sequi.-->
+        <!--</div>-->
+        <!--<div class="col-sm-12 col-md-6 col-lg-3 mb-4 py-1 border border-dark rounded">-->
+            <!--Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse facilis necessitatibus nihil pariatur sint? Animi delectus deserunt dolore est ipsam iste magni possimus temporibus veritatis voluptatibus? Dolores ratione similique voluptates.-->
+        <!--</div>-->
+        <!--<div class="col-sm-12 col-md-6 col-lg-3 mb-4 py-1 border border-dark rounded">-->
+            <!--Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci animi at cum est nemo non repellendus ullam! A, aperiam architecto dicta distinctio eveniet excepturi fugiat maiores rerum soluta. Sint, tempora.-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+
+<section class="adrec-slider">
+    <!-- caroussel   -->
+    <!-- caroussel boutstrap-deja codé, juste besoin de le parametrer -->
+    <!-- la balise div est juste un contenant, on empile des div dans des div a la maniere des poupées russes pour structurer le code et la mise en page -->
+    <!-- ensuite les class sont des references aux effets de style qui seront appliqués a cet element -->
+
+    <div class="row">
+        <div class="col">
+            <!-- autant une class seras utilisée par divers elements, par exemple, tous les elements textes de la page serons d'une meme police de caracteres, -->
+            <!-- autand un id ne fera reference qu'a un seul element -->
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="adrec-slider-item" style="background-image: url('assets/img/Arthur.jpg')"></div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="adrec-slider-item" style="background-image: url('assets/img/Guenièvre.jpg')"></div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="adrec-slider-item" style="background-image: url('assets/img/Perceval.jpg')"></div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="adrec-slider-item" style="background-image: url('assets/img/Karadoc.jpg')"></div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="adrec-slider-item" style="background-image: url('assets/img/Léodagan.jpg')"></div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="adrec-slider-item" style="background-image: url('assets/img/3.jpg')"></div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+
+    <div class="row">
+        <div>
+            <h1 id="h1">Pseudo élément</h1>
+        </div>
+    </div>
+
+    <div class="row my-2">
+        <div class="col-md-12 col-lg-8 order-md-0 order-lg-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur cumque deserunt dicta ducimus eaque ex, illo impedit laudantium non omnis quam ut, veritatis! Incidunt iste necessitatibus, non pariatur veritatis voluptates!</div>
+        <div class="col-sm-12 col-md-6 col-lg-4 order-md-2 order-lg-1"><img src="assets/img/Perceval.jpg"></div>
+        <div class="col-sm-12 col-md-6 col-lg-4 order-md-1 order-lg-2"><img src="assets/img/Karadoc.jpg"></div>
+        <div class="col-md-12 col-lg-8 order-md-4 order-lg-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad alias, beatae corporis cum ducimus, eum ex facilis fuga fugiat illum laudantium, optio quia voluptas? Blanditiis et explicabo magnam possimus voluptas.</div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card" style="width: 18rem;">
+                <img src="assets/img/LancelotduLac.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card" style="width: 18rem;">
+                <img src="assets/img/LancelotduLac.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+            <div class="card" style="width: 18rem;">
+                <img src="assets/img/LancelotduLac.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row align-exemple justify-content-around my-2 text-center">
+        <div class="col-md-4">Lorem ipsum dolor sit amet.</div>
+        <div class="col-md-4">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                Toc Toc !
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Sire ...</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <h1>On en a gros !!!</h1>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">Accusamus commodi suscipit tempore ?</div>
+        <div class="col-md-4">Eius eum quos voluptate voluptatibus!</div>
+        <div class="col-md-4">Accusamus eligendi error neque quisquam.</div>
+    </div>
+
+    <!--  form  -->
+    <div class="row my-4">
+        <div class="col">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">@</span>
+                </div>
+                <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                    <span class="input-group-text" id="basic-addon2">@example.com</span>
+                </div>
+            </div>
+
+            <label for="basic-url">Your vanity URL</label>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
+                </div>
+                <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+            </div>
+
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">$</span>
+                </div>
+                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                <div class="input-group-append">
+                    <span class="input-group-text">.00</span>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">With textarea</span>
+                </div>
+                <textarea class="form-control" aria-label="With textarea"></textarea>
+            </div>
+
+        </div>
+    </div>
+
+
+</div>
+
+<div id="bandeau-rgpd">
+    Voulez vous prendre le temps de vous informer
+    <button id="accept-condition">Accepter</button>
+    <!--<button id="accept-condition" onclick="acceptCondition();">Accepter</button>-->
+</div>
+
+<!-- les fichiers javascript sont généralement plus long à charger, on les met en fin de code pour limiter le temps de chargement de la page-->
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+
+<!-- ce fichier js gére l'affichage du bandeau d'infos en bas de page ainsi que l'appui sur le bouton valider et le met en memoire-->
+<!-- si tu valide et que tu recharge la page, le bandeau ne s'affichera plus , j'ai commenté le code du fichier aussi-->
+<script type="text/javascript" src="assets/js/script.js"></script>
+</body>
+</html>
